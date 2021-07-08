@@ -1,0 +1,48 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+
+    <div class="authBlock contaier">
+      <h3>Create your account </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae veniam similique officiis sequi, </p>
+      <div class="form-row ">
+        <div class="form-group col-md-6">
+          <label> Name</label>
+          <input class="tirets " type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input class="tirets" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Email Address</label>
+        <input type="email" class="form-control" placeholder="Email Address" #userEmail required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Password</label>
+          <input type="password" class="form-control" placeholder="Password" #userPwd required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Confirm password</label>
+          <input class="tirets" type="password" class="form-control">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="small-text" for="exampleCheck1">By creating an account you aggree to our </label><br>
+          <a class="small-text" href="#">Terms and conditions</a>
+
+        </div>
+       
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <span class="redirect">Dont have an account ? <a class="redirect" routerLink="/sign-in"> Sign in
+          instead</a>
+          </span>
+        <button type="button" class="btn btn-primary "
+          (click)="ngAuthService.SignUp(userEmail.value, userPwd.value)">Next</button>
+      </div>
+    </div>
+
+  </div>

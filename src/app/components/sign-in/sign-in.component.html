@@ -1,0 +1,43 @@
+<div class="container login-container">
+  <div class="row container">
+    <div class="col-md-4 login-form-1">
+      <h4 class="pl-4">Login in to </h4>
+      <h4 class="pl-4">your account </h4>
+      <form>
+        <div class="form-group">
+          <label class="form-label">Email Address :</label>
+          <input type="text" class="form-control" placeholder="Username" #userName required>
+          <img class="eye" src="assets/Eye Off.png">
+        </div>
+        <div class="form-group">
+          <label>Password :</label>
+          <input type="password" class="form-control" placeholder="Password" #userPassword required>
+        </div>
+        <div class="form-group">
+          <input type="button" class="btn btn-block btnSubmit mt-4" value="Login"
+            (click)="ngAuthService.SignIn(userName.value, userPassword.value)" />
+        </div>
+
+        <h6><span>OR</span></h6>
+        <div class="formGroup ">
+          <button type="button" class="btn btn-danger btn-block " (click)="ngAuthService.GoogleAuth()">
+            Log in with Google
+          </button>
+          <div class="small-text text-center">
+            <span>Dont have an account ?</span><a class="redirect" routerLink="/sign-up"> Register</a>
+          </div>
+        </div>
+       
+      </form>
+    </div>
+    <div class="col-8 pl-5 container">
+      <img class="app pb-2" src="assets/Group 1741.png">
+      <p class="intro pl-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ab laborum nemo commodi
+        cupiditate blanditiis deserunt. Eum deserunt, quaerat nostrum blanditiis quia </p>
+      <div class="row d-flex justify-content-center  ">
+        <img class="store pr-2" src="assets/google play.png">
+        <img class="store" src="assets/app store.png ">
+      </div>
+    </div>
+  </div>
+</div>

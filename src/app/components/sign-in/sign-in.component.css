@@ -1,0 +1,100 @@
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.login-form-1 {
+  margin-top: 20px;
+  padding: 2%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h4 {
+  text-align: left;
+  color: #333;
+}
+.login-form-2 {
+  padding: 5%;
+}
+p span {
+  font-size: 10px;
+}
+.app {
+  width: 600px;
+  height: 400px;
+  float: right;
+}
+.eye{
+    position: absolute;
+    top: 170px;
+    left: 280px;
+    width: 15px;
+    flex: display;
+    justify-content: center;
+    align-items: center;
+}
+label {
+  color: gray;
+  font-size: 10px;
+}
+
+span {
+    color: gray;
+    font-size: 10px;
+  }
+  a{
+      font-size: 10px;
+  }
+.store {
+  width: 100px;
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: #fff;
+}
+.login-container form {
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: #fff;
+  background-color: #17aebe;
+}
+.login-form-2 .btnSubmit {
+  font-weight: 600;
+  color: #0062cc;
+  background-color: #fff;
+}
+.login-form-2 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-1 .ForgetPwd {
+  color: #0062cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h6 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px ridge #808080;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+h6 span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+}
+.intro {
+  text-align: right;
+  color: gray;
+  font-size: 16px;
+}
